@@ -1,0 +1,7 @@
+{
+  "name": "Hockey Scheidsrechter Pro",
+  "description": "Professional Field Hockey Arbitration App with Timer, Scorekeeping, Card Management, and AI Assistant based on KNHB rules.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

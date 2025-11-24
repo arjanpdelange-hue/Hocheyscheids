@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://cdn-icons-png.flaticon.com/512/2646/2646080.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#4f46e5" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Hockey Arbitrage Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f3f4f6;
+        -webkit-tap-highlight-color: transparent;
+      }
+      /* Custom scrollbar for timeline */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      /* Pulse animation for active timers */
+      @keyframes pulse-red-shadow {
+        0% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(239, 68, 68, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+      }
+      .animate-pulse-red {
+        animation: pulse-red-shadow 2s infinite;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
